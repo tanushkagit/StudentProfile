@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <title>Student Academic Portal</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      body {
+        background-color: #0b1020;
+        color: #f1f1f6;
+        font-family: Arial, sans-serif;
+      }
+
+      .profile-header {
+        background: linear-gradient(135deg, #7b3f8c, #315aa8, #a83f70);
+        color: #ffffff;
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .profile-img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #f3a6c8;
+      }
+
+      .section-title {
+        color: #e7a6d7;
+        margin-bottom: 25px;
+        font-weight: bold;
+      }
+
+      .card {
+        background-color: #151c32;
+        color: #f1f1f6;
+        border: 1px solid #303b5c;
+        box-shadow: 0 3px 18px rgba(0, 0, 0, 0.4);
+      }
+
+      .skill-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .skill-badge {
+        color: #ffffff;
+        margin: 5px;
+        padding: 10px 15px;
+        font-weight: 500;
+        border-radius: 8px;
+      }
+
+      .html {
+        background-color: #527fbd;
+      }
+
+      .css {
+        background-color: #4f9d69;
+      }
+
+      .js {
+        background-color: #c9a227;
+      }
+
+      .bootstrap {
+        background-color: #8064a2;
+      }
+
+      .java {
+        background-color: #bd5b78;
+      }
+
+      .python {
+        background-color: #63748a;
+      }
+
+      .mysql {
+        background-color: #3d9291;
+      }
+
+      .table-primary {
+        --bs-table-bg: #4d3970;
+        --bs-table-color: #ffffff;
+        --bs-table-border-color: #66528c;
+      }
+
+      .btn-primary {
+        background-color: #c45a8d;
+        border-color: #c45a8d;
+      }
+
+      .btn-primary:hover {
+        background-color: #a94875;
+        border-color: #a94875;
+      }
+
+      .btn-secondary {
+        background-color: #46516d;
+        border-color: #46516d;
+      }
+
+      footer {
+        background-color: #080d1a;
+        color: #f1f1f6;
+        padding: 30px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 768px) {
+        .profile-header {
+          padding: 30px 15px;
+        }
+
+        .profile-img {
+          width: 120px;
+          height: 120px;
+        }
+
+        .section-title {
+          font-size: 24px;
+        }
+
+        .card {
+          margin-bottom: 20px;
+        }
+
+        .profile-header h1 {
+          font-size: 28px;
+        }
+
+        .profile-header h3 {
+          font-size: 20px;
+        }
+
+        .table {
+          font-size: 14px;
+        }
+
+        footer {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="profile-header">
+      <img src="Tanushka.jpeg" class="profile-img" alt="Student Photograph" />
+
+      <h1 class="mt-3">Student Academic Portal</h1>
+
+      <p class="lead">AP Shah Institute of Technology</p>
+
+      <h3>Welcome, Tanushka Chaudhari</h3>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> 🎓 Student Portal </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#profile"> Profile </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#academic"> Academic </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"> Skills </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies"> Hobbies </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile" class="container mt-5">
+      <h2 class="section-title text-center">👨‍🎓 Student Profile</h2>
+
+      <div class="card p-4">
+        <div class="row align-items-center">
+          <!-- Photograph -->
+
+          <div class="col-md-4 text-center">
+            <img
+              src="Tanushka.jpeg"
+              class="img-fluid rounded-circle"
+              width="200"
+              height="200"
+              alt="Student Photograph"
+            />
+          </div>
+
+          <article class="col-md-8">
+            <h3>Tanushka Chaudhari</h3>
+
+            <p>
+              <strong>Student ID:</strong>
+              25104072
+            </p>
+
+            <p>
+              <strong>Course:</strong>
+              Bachelor of Engineering
+            </p>
+
+            <p>
+              <strong>Year:</strong>
+              Second Year
+            </p>
+
+            <p>
+              <strong>Email:</strong>
+              25104072@apsit.edu.in
+            </p>
+
+            <p>
+              <strong>Phone:</strong>
+              +91 98765 43210
+            </p>
+
+            <p>
+              <strong>Address:</strong>
+              Mumbai, Maharashtra, India
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container mt-5">
+      <h2 class="section-title text-center">💻 Skills</h2>
+
+      <div class="card p-4 text-center">
+        <div class="skill-container">
+          <span class="badge skill-badge html"> HTML </span>
+
+          <span class="badge skill-badge css"> CSS </span>
+
+          <span class="badge skill-badge js"> JavaScript </span>
+
+          <span class="badge skill-badge bootstrap"> Bootstrap </span>
+
+          <span class="badge skill-badge java"> Java </span>
+
+          <span class="badge skill-badge python"> Python </span>
+
+          <span class="badge skill-badge mysql"> MySQL </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="academic" class="container mt-5">
+      <h2 class="section-title text-center">📚 Academic Information</h2>
+
+      <div class="card p-4">
+        <div class="row text-center">
+          <div class="col-md-3 mb-3">
+            <h5>College</h5>
+
+            <p>AP Shah Institute Of Technology</p>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <h5>Course</h5>
+
+            <p>SE</p>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <h5>Current Semester</h5>
+
+            <p>Semester 3</p>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <h5>Attendance</h5>
+
+            <p class="text-success fw-bold">88%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <h2 class="section-title text-center">📝 Semester-wise Marks</h2>
+
+      <div class="card p-3">
+        <div class="table-responsive">
+          <table
+            class="table table-striped table-bordered table-hover text-center"
+          >
+            <thead class="table-primary">
+              <tr>
+                <th>Semester</th>
+
+                <th>AT</th>
+
+                <th>DBMS</th>
+
+                <th>ADSA</th>
+
+                <th>Mathematics</th>
+
+                <th>Percentage</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Semester 3</td>
+
+                <td>92</td>
+
+                <td>88</td>
+
+                <td>94</td>
+
+                <td>86</td>
+
+                <td>90%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="container mt-5">
+      <h2 class="section-title text-center">🎨 Hobbies & Interests</h2>
+
+      <div class="card p-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>My Hobbies</h4>
+
+            <ul class="list-group">
+              <li class="list-group-item">Playing Video Games</li>
+
+              <li class="list-group-item">Badminton</li>
+
+              <li class="list-group-item">Photography</li>
+
+              <li class="list-group-item">Dancing</li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h4>Weekend Activities</h4>
+
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">Work on personal projects</li>
+
+              <li class="list-group-item">Play sports</li>
+
+              <li class="list-group-item">Watch movies</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <h2 class="section-title text-center">🔗 Useful Links</h2>
+
+      <div class="card p-4">
+        <div class="list-group">
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            class="list-group-item list-group-item-action"
+          >
+            🌐 Google
+          </a>
+
+          <a
+            href="https://www.apsit.edu.in/"
+            target="_blank"
+            class="list-group-item list-group-item-action"
+          >
+            🎓 AP Shah Official Website
+          </a>
+
+          <a
+            href="https://github.com"
+            target="_blank"
+            class="list-group-item list-group-item-action"
+          >
+            🐙 GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container mt-5">
+      <h2 class="section-title text-center">📩 Contact / Feedback</h2>
+
+      <div class="card p-4">
+        <form>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label"> Full Name </label>
+
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label"> Email </label>
+
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Subject </label>
+
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter subject"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Feedback </label>
+
+            <textarea
+              class="form-control"
+              rows="5"
+              placeholder="Write your feedback here"
+            ></textarea>
+          </div>
+
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="agree" />
+
+            <label class="form-check-label" for="agree">
+              I agree to the terms and conditions.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Feedback</button>
+
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <h4>🎓 Student Academic Portal</h4>
+
+      <p>AP Shah Institute of Technology</p>
+
+      <p>Email: 25104072@apsit.edu.in | Phone: +91 12345 67890</p>
+
+      <p class="mb-0">© 2026 Student Academic Portal. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
